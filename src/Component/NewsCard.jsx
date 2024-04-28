@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NewsCard = ({item}) => {
-    console.log(item);
+    // console.log(item);
     const _id = item._id ;
 
     return (
@@ -11,7 +11,7 @@ const NewsCard = ({item}) => {
         <div className="card-body">
           <h2 className="card-title"> {item.title} </h2>
           <small> {item.author.name} </small>
-          <Link to={`/news/${_id}`}><button> See Details </button></Link>
+          <Link to={`/news/${_id}`}><button className='text-blue-700 font-bold'> See Details... </button></Link>
         </div>
       </div>
     );
